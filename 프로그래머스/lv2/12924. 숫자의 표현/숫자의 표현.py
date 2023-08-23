@@ -9,3 +9,6 @@ def solution(n):
             elif sum > n:
                 break
     return answer
+
+print(solution(15)) # 4
+# 꿀팁 : 더하기만 생각하면 된다
