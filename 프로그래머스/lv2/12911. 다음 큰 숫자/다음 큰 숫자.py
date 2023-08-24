@@ -17,3 +17,16 @@ def solution(n):
             t += 1
             
     return answer
+
+# 모범답안
+def solution(n):
+    num1 = bin(n).count('1')
+    while(True):
+        n += 1
+        if num1 == bin(n).count('1'):
+            break
+    answer = n
+    return answer
+
+print(solution(78)) # 83
+print(solution(15)) # 23
